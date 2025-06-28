@@ -3,3 +3,104 @@ Header background - #FFDBAA
 button - #805215
 Header Text - #553100
 Main background - #D4A76A*/
+:root {
+  --secondary: #FFDBAA;
+  --button: #805215;
+  --header-text: #553100;
+  --primary: #D4A76A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: var(--secondary);
+  color: var(--header-text);
+  display: flex;
+  align-items: center;
+
+}
+
+.main-header {
+    border-bottom: 1px solid var(--header-text);
+      text-transform:uppercase;
+
+}
+
+nav {
+  list-style: none;
+  color: white;
+  display: flex;
+  margin: 10px;
+}
+
+header h1{
+  flex: 1;
+  color: var(--header-text);
+  margin-left: 10px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li, button{
+  display: inline-block;
+  background-color: var(--button);
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+section, section header {
+  background: white;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 300px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 20px;
+}
+
+section > * {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about {
+  min-width: 100%;
+}
+
+section button {
+  width: 100%;
+  flex: 1;
+  border: 1px solid black;
+  align-self: center;
+  margin: 0;
+  margin-top: 10px;
+}
